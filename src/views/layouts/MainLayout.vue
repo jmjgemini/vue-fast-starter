@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { UserIcon } from "@heroicons/vue/solid";
+</script>
 
 <template>
   <div
@@ -15,7 +17,17 @@
     class="absolute left-0 bottom-0 border-r bg-white overflow-y-auto p-4"
     style="top: 48px; width: 200px"
   >
-    sidebar
+    <ul>
+      <li>
+        <div
+          class="flex gap-1 items-center text-sm text-gray-500 select-none hover:bg-gray-200 py-2 px-2 rounded mt-1"
+          v-for="index in Array(20)"
+          :key="index"
+        >
+          <user-icon class="h-auto w-4" />用户管理
+        </div>
+      </li>
+    </ul>
   </div>
   <div
     class="h-full bg-gray-100 overflow-y-auto"
