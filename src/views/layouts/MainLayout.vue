@@ -6,7 +6,9 @@
     style="height: 48px"
   >
     <div class="text-gray-500 text-xl font-bold">Vue Fast Starter</div>
-    <div class="text-sm">你好，管理员</div>
+    <div class="flex items-center gap-x-2">
+      <div class="text-sm">你好，管理员</div>
+    </div>
   </div>
 
   <div
@@ -24,7 +26,7 @@
 
       <div
         class="w-full bg-gray-300 h-8 mt-4 rounded"
-        v-for="(item, index) in Array(20)"
+        v-for="index in Array(20)"
         :key="index"
       ></div>
     </div>
