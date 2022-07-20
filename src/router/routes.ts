@@ -1,16 +1,11 @@
 import { RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import MainLayout from "../views/layouts/MainLayout.vue";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "Home",
-    component: HomeView
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: () => import("../views/AboutView.vue")
+    component: MainLayout
   }
 ];
 
