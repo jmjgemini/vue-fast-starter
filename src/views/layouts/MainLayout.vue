@@ -11,10 +11,16 @@ const { topBarHeightInPixel, sideBarWidthInPixel } = storeToRefs(layoutStore);
   <div class="absolute h-full w-full">
     <!-- top bar -->
     <div
-      class="border-b top-0 left-0 right-0"
+      class="border-b top-0 left-0 right-0 flex justify-between items-center px-4"
       :style="{ height: `${topBarHeightInPixel}px` }"
     >
-      header
+      <div class="text-2xl select-none text-indigo-700 font-extrabold">
+        New Admin Type
+      </div>
+      <div class="flex justify-start">
+        <div class="text-sm select-none text-gray-700">你好,管理员</div>
+        <div></div>
+      </div>
     </div>
 
     <div
