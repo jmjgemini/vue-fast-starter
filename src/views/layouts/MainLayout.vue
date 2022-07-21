@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
 import { useLayoutStore } from "../../stores/layout";
+import SideMenu from "./components/SideMenu.vue";
 
 const layoutStore = useLayoutStore();
 const { topBarHeightInPixel, sideBarWidthInPixel } = storeToRefs(layoutStore);
@@ -22,10 +23,10 @@ const { topBarHeightInPixel, sideBarWidthInPixel } = storeToRefs(layoutStore);
     >
       <!-- side menu -->
       <aside
-        class="border-r flex-grow-0 overflow-y-auto"
+        class="border-r flex-grow-0 overflow-y-auto px-2 py-4"
         :style="{ width: `${sideBarWidthInPixel}px` }"
       >
-        side menu
+        <side-menu></side-menu>
       </aside>
 
       <!-- main content -->
