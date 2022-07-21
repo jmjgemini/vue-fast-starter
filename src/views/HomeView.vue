@@ -1,11 +1,10 @@
-<script setup lang="ts">
-import { defineComponent } from "vue";
-</script>
-<script lang="ts">
-export default defineComponent({
-  name: "HomeView"
-});
-</script>
+<script setup lang="ts"></script>
+
 <template>
-  <h1>This is home vue</h1>
+  <div class="text-2xl text-gray-900">This is Home View</div>
+  <div
+    class="h-10 w-full bg-gray-300 mt-2 rounded"
+    v-for="index in Array(30)"
+    :key="index"
+  ></div>
 </template>

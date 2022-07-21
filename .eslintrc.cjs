@@ -20,6 +20,12 @@ module.exports = {
   },
   plugins: ["vue", "@typescript-eslint", "prettier"],
   rules: {
-    "prettier/prettier": 2
+    "prettier/prettier": [
+      "error",
+      {
+        // https://github.com/prettier/prettier/issues/5844
+        htmlWhitespaceSensitivity: "ignore"
+      }
+    ]
   }
 };
