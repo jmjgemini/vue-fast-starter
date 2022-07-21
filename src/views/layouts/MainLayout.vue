@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { UserIcon } from "@heroicons/vue/solid";
+import { storeToRefs } from "pinia";
+import { useAppSettingStore } from "../../stores/appSetting";
+const appSettingStore = useAppSettingStore();
+const { topBarHeight, sideBarWidth } = storeToRefs(appSettingStore);
 </script>
 
 <template>
   <div
     class="absolute top-0 left-0 right-0 border-b bg-white flex justify-between items-center px-4"
-    style="height: 48px"
+    :style="{ height: `${topBarHeight}px` }"
   >
     <div class="text-gray-500 text-xl font-bold">Vue Fast Starter</div>
     <div class="flex items-center gap-x-2">
@@ -15,7 +19,10 @@ import { UserIcon } from "@heroicons/vue/solid";
 
   <div
     class="absolute left-0 bottom-0 border-r bg-white overflow-y-auto p-4"
-    style="top: 48px; width: 200px"
+    :style="{
+      top: `${topBarHeight}px`,
+      width: `${sideBarWidth}px`
+    }"
   >
     <ul>
       <li>
