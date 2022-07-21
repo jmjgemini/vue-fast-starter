@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from "vue-router";
-import MainLayout from "../views/layouts/MainLayout.vue";
+import MainLayout from "@/views/layouts/MainLayout.vue";
 
 const routes: RouteRecordRaw[] = [
   {
