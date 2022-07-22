@@ -89,7 +89,7 @@ const menus: Array<MenuOption | MenuGroupOption> = [
 </script>
 
 <template>
-  <div>
+  <div class="px-2 py-4">
     <div v-for="menu in menus" :key="menu.key">
       <router-link
         v-if="menu.type === 'item'"

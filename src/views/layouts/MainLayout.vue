@@ -29,14 +29,16 @@ const { topBarHeightInPixel, sideBarWidthInPixel } = storeToRefs(layoutStore);
     >
       <!-- side menu -->
       <aside
-        class="border-r flex-grow-0 overflow-y-auto px-2 py-4"
+        class="border-r flex-grow-0 overflow-y-auto scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300"
         :style="{ width: `${sideBarWidthInPixel}px` }"
       >
         <side-menu></side-menu>
       </aside>
 
       <!-- main content -->
-      <div class="bg-gray-100 flex-grow p-4 overflow-y-auto">
+      <div
+        class="flex-grow p-4 overflow-y-auto scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300"
+      >
         <router-view></router-view>
       </div>
     </div>
