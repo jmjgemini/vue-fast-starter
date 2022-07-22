@@ -12,6 +12,78 @@ const menus: Array<MenuOption | MenuGroupOption> = [
     path: "/about",
     key: "About",
     type: "item"
+  },
+  {
+    label: "示例页面1",
+    path: "/demo/page1",
+    key: "DemoPage1",
+    type: "item"
+  },
+  {
+    label: "示例页面2",
+    path: "/demo/page2",
+    key: "DemoPage2",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
+  },
+  {
+    label: "示例页面3",
+    path: "/demo/page3",
+    key: "DemoPage3",
+    type: "item"
   }
 ];
 </script>

@@ -4,6 +4,6 @@
 
 @layer components {
     .router-link-active {
-        @apply bg-indigo-100 text-indigo-700 hover:bg-indigo-100 !important
+        @apply bg-sky-100 text-sky-700 hover:bg-sky-100 !important
     }
 }

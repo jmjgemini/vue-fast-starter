@@ -14,8 +14,8 @@ const { topBarHeightInPixel, sideBarWidthInPixel } = storeToRefs(layoutStore);
       class="border-b top-0 left-0 right-0 flex justify-between items-center px-4"
       :style="{ height: `${topBarHeightInPixel}px` }"
     >
-      <div class="text-2xl select-none text-indigo-700 font-extrabold">
-        New Admin Type
+      <div class="text-2xl select-none text-sky-500 font-extrabold">
+        TAdmin Pro
       </div>
       <div class="flex justify-start">
         <div class="text-sm select-none text-gray-700">你好,管理员</div>
